@@ -104,4 +104,4 @@ You can create a Sublime Text build system like so:
 ### License
 whatever
 
-¯\\_(ツ)_/¯
+¯\\\_(ツ)\_/¯
