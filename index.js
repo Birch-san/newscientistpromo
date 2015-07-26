@@ -9,26 +9,33 @@ const templateURL = "https://www.newscientist.com/wp-content/plugins/ns-barrier/
 const prettyPrint = (offer) => {
 	return JSON.stringify(_.pick(
 		offer,
-		'price2', 'saving2', 'pricestring2'
+		'price2', 'saving2', 'pricestring2', 'promo'
 		), null, "\t");
 };
 
 const promo = {
 	start:8200,
-	end: 8210
+	end: 8220
 };
 console.log(util.format("Querying promotions %d–%d…", promo.start, promo.end));
 
 Promise.settle(_.map(_.range(promo.start, promo.end), (iterand) => {
 	return rest.get(util.format(templateURL, iterand))
+	.then((result) => {
+		return _.extend({}, JSON.parse(result), {
+			promo: iterand
+		});
+	})
 }))
 .then((results) => {
 	var offers = _.map(
 		_.filter(
 			results,
-			(r) => r.isFulfilled),
+			(r) => {
+				return r.isFulfilled();
+			}),
 		(r) => {
-			return JSON.parse(r.value());
+			return r.value();
 		});
 	var lowestPrice2 = _.min(offers, (offer) => {
 		return offer.price2.replace(/£/, "");

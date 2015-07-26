@@ -63,19 +63,21 @@ We can query for a variety of quotes, and look for the cheapest.
 Here is sample output from my Node program:
 
 ```
-Querying promotions 8200–8210…
+Querying promotions 8200–8220…
 Regarding product 2…
 Lowest price:
 {
 	"price2": "£44.00",
 	"saving2": "Save 11%",
-	"pricestring2": "12 issues for £44.00"
+	"pricestring2": "12 issues for £44.00",
+	"promo": 8200
 }
 Largest saving:
 {
 	"price2": "£149.00",
 	"saving2": "Save 25%",
-	"pricestring2": "51 Issues for £149.00"
+	"pricestring2": "51 Issues for £149.00",
+	"promo": 8201
 }
 ```
 
