@@ -36,21 +36,21 @@ It gives output like this:
 
 ```json
 {
-   "price1":"£329.00",
-   "price2":"£344.00",
-   "price3":"£354.00",
-   "price4":"0.00",
-   "saving1":"Save 41%",
-   "saving2":"Save 11%",
-   "saving3":"Save 45%",
-   "pricestring1":"12 issues for £329.00",
-   "pricestring2":"12 issues for £344.00",
-   "pricestring3":"12 issues for £354.00",
-   "pricestring4":"1 Month for 0.00",
-   "promChange1":null,
-   "promChange2":null,
-   "promChange3":null,
-   "promChange4":"8068"
+   "price1": "£329.00",
+   "price2": "£344.00",
+   "price3": "£354.00",
+   "price4": "0.00",
+   "saving1": "Save 41%",
+   "saving2": "Save 11%",
+   "saving3": "Save 45%",
+   "pricestring1": "12 issues for £329.00",
+   "pricestring2": "12 issues for £344.00",
+   "pricestring3": "12 issues for £354.00",
+   "pricestring4": "1 Month for 0.00",
+   "promChange1": null,
+   "promChange2": null,
+   "promChange3": null,
+   "promChange4": "8068"
 }
 ```
 
