@@ -15,7 +15,7 @@ const prettyPrint = (offer) => {
 
 const promo = {
 	start:8200,
-	end: 8220
+	end: 8202
 };
 console.log(util.format("Querying promotions %d–%d…", promo.start, promo.end));
 
